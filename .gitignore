@@ -2,6 +2,9 @@
 logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
+/tmp
+*.env
 
 # Dependencies
 node_modules/
@@ -10,11 +13,15 @@ node_modules/
 coverage
 
 # Transpiled files
+/dist
 build/
 
 # VS Code
 .vscode
 !.vscode/tasks.js
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # JetBrains IDEs
 .idea/
