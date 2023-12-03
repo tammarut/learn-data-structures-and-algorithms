@@ -19,7 +19,8 @@
     "rimraf": "~3.0",
     "ts-jest": "~29.0",
     "tsutils": "~3.21",
-    "typescript": "~4.9"
+    "typescript": "~4.9",
+    "vitest": "^0.28.4"
   },
   "scripts": {
     "start": "node build/src/main.js",
@@ -30,6 +31,7 @@
     "build:release": "npm run clean && tsc -p tsconfig.release.json",
     "lint": "eslint . --ext .ts --ext .mts",
     "test": "jest --coverage",
+    "test:vitest": "vitest",
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
@@ -39,6 +41,6 @@
     "tslib": "~2.4"
   },
   "volta": {
-    "node": "18.12.1"
+    "node": "18.13.0"
   }
 }
